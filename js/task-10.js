@@ -1,13 +1,13 @@
-const input = document.querySelector('#controls input');
-const createButton = document.querySelector('#controls [data-create]');
-const destroyButton = document.querySelector('#controls [data-destroy]');
-const boxes = document.querySelector('#boxes');
-
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+const input = document.querySelector('#controls input');
+const createButton = document.querySelector('#controls [data-create]');
+const destroyButton = document.querySelector('#controls [data-destroy]');
+const boxes = document.querySelector('#boxes');
 
 function createBoxes(amount) {
   let width = 30;
